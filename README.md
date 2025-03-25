@@ -22,7 +22,7 @@ Predicting the future trajectories of surrounding agents is crucial for proactiv
 
 ## Implement
 
-<!--
+
 
 ### 1. Requirements
 Recommend version:
@@ -66,6 +66,6 @@ To obtain the performance of the target domain on 3 different tasks through our 
 python test_dg.py --config cfgs/DGPIC_<target_domain>.yaml --exp_name DGPIC_<target_domain> --ckpts experiments/DGPIC_<target_domain>/ckpt-last.pth
 ```
 
--->
+
 
 Thank you for your interest in our project. If you have any questions, please feel free to contact us at yangfeng@seu.edu.cn. :-)
