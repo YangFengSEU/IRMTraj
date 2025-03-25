@@ -25,37 +25,40 @@ This is the source code of our IRMTraj.
 ### 1. Requirements
 Recommend version:
 ```
-PyTorch = 2.0.0;
-python = 3.10;
-CUDA = 12.1;
+conda install python=3.10 pytorch=2.0.0 torchvision torchaudio pytorch-cuda=12.1 numpy scipy scikit-learn matplotlib pandas tqdm pyyaml opencv pip -c pytorch -c nvidia -c defaults
 
 ```
 
 Other packages:
 ```
 pip install Argoverse
+pip install seaborn
 ```
-
-
-
+### 2. Data Preparation
+ 
+```
+data/processed/ZS3s/train/
+data/processed/ZS3s/val/
+```
 ### 3. Training
-To train DG-PIC on the new **multi-domain and multi-task setting**, run the following command:
+To train IRMTraj on the new **cross-map and cross-scenario setting**, run the following command:
 
 ```
-python train.py
+python train.py --train_data1 EP --train_data2 FT --test_data SR OF LN GL MA EP
+
 ```
 
 For IRM ablation experiments (disable IRM loss), run
 
 ```
-python train.py -l 0
+python train.py --train_data1 EP --train_data2 FT --test_data SR OF LN GL MA EP --l 0
 ```
 
 ### 5. Trajectory Visualization
 After training, run the following to visualize predicted trajectories:  
 
 ```
-python picture.py
+python picture.py --trained_models
 ```
 
 ### 6. Logs and Checkpoints
