@@ -28,41 +28,39 @@ Recommend version:
 PyTorch = 2.0.0;
 python = 3.10;
 CUDA = 12.1;
+
 ```
 
 Other packages:
 ```
-pip install -r requirements.txt
+pip install Argoverse
 ```
 
-Install "pointnet2_ops_lib":
-```
-cd ./pointet2_ops_lib
-python setup.py install
-```
 
-Install extension for Chamfer Distance:
-```
-cd ./extensions/chamfer_dist
-python setup.py install
-```
 
-### 2. Pretraining
+### 3. Training
 To train DG-PIC on the new **multi-domain and multi-task setting**, run the following command:
 
 ```
-python main.py --config cfgs/DGPIC_<target_domain>.yaml --exp_name exp/DGPIC_<target_domain>
+python train.py
 ```
 
-Replace the `<target_domain>` by `[modelnet, shapenet, scannet, scanobjectnn]`. The remaining 3 datasets will be considered as the source domains.
-
-### 3. Testing
-
-To obtain the performance of the target domain on 3 different tasks through our **Test-time Domain Generalization** method, run the following command:
+For IRM ablation experiments (disable IRM loss), run
 
 ```
-python test_dg.py --config cfgs/DGPIC_<target_domain>.yaml --exp_name DGPIC_<target_domain> --ckpts experiments/DGPIC_<target_domain>/ckpt-last.pth
+python train.py -l 0
 ```
+
+### 5. Trajectory Visualization
+After training, run the following to visualize predicted trajectories:  
+
+```
+python picture.py
+```
+
+### 6. Logs and Checkpoints
+Training logs are saved in the `log/` directory and model checkpoints are saved in the `trained_models/` directory.
+
 
 
 
