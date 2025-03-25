@@ -6,8 +6,6 @@ This is the source code of our IRMTraj.
 
 <img src="./overview.png" style="zoom:30%;" />
 
-Predicting the future trajectories of surrounding agents is crucial for proactive and intelligent decision-making of autonomous vehicles. Among all techniques, domain generalization is a significant concern, as maintaining robust prediction performance is often difficult in the face of data shifts caused by open-world environments, such as varying road structures and evolving traffic regulations. This paper introduces a trajectory prediction method named **IRMTraj**, focused on enhancing generalization of trajectory prediction model in unseen testing domains. We specifically identify maneuver as a potential cause for the decline in domain generalization. We specifically highlight maneuver-type variability as a key factor contributing to the challenge of domain generalization, as different maneuvers introduce significant shifts in trajectory patterns across domains. We first propose a self-supervised maneuver-type prediction module, which perceives maneuver-type as clues for environment partition. Besides, our approach integrates prior maneuver-type into IRM for learning environment-invariant causal features, enabling progressive prediction of future trajectories based on decomposed driving intentions. Furthermore, we develop a Contextual Map Topology Extraction module to model the influence of the surrounding topological road structures on the trajectory. Experiments demonstrate that our model significantly outperforms state-of-the-art competitors, with up to 2.3 times reduction in mFDE across both cross-map and cross-scenario domain generalization tasks.
-
 
 ## Highlights
 
