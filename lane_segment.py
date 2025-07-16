@@ -1,11 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""
-Created on Thu Nov 24 02:03:02 2022
 
-@author: lb
-
-"""
 import logging
 import os
 import xml.etree.ElementTree as ET
