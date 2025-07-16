@@ -6,6 +6,7 @@ from utilsout import outputActivation
 from backpack import backpack, extend
 from backpack.extensions import BatchGrad
 
+
 class decode(nn.Module):
     def __init__(self,args):
         super(decode, self).__init__()
