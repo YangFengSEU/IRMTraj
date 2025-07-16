@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 
+
 import torch
 
 from model import highwayNet2
