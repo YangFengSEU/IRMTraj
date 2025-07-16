@@ -3,8 +3,6 @@ import time
 import os
 import sys
 def logger_init(file_path, file_name,log_level = logging.INFO, only_file = False):
-
-
     timenow = time.strftime('%Y-%m-%d-%H:%M',time.localtime())
     file_path = file_path+'/'+timenow
     if not os.path.exists(file_path):
