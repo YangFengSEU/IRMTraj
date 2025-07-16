@@ -1,9 +1,5 @@
 # -*- coding: utf-8 -*-
-"""
-Created on Thu Sep  1 15:23:36 2022
 
-@author: 18502
-"""
 
 import math
 import torch
