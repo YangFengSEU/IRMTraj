@@ -4,9 +4,7 @@ import scipy.io as scp
 import numpy as np
 import torch
 
-#___________________________________________________________________________________________________________________________
 
-### Dataset class for the NGSIM dataset
 class ngsimDataset(Dataset):
 
 
@@ -20,10 +18,8 @@ class ngsimDataset(Dataset):
         self.grid_size = grid_size # size of social context grid
 
 
-
     def __len__(self):
         return len(self.D)
-
 
 
     def __getitem__(self, idx):
