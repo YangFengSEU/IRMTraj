@@ -3,6 +3,7 @@
 import sys
 
 
+
 def get_value_list(d):
     assert isinstance(d, dict)
     if sys.version_info[0] == 2:
