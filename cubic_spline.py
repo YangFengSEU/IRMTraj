@@ -8,6 +8,7 @@ import numpy as np
 import bisect
 
 
+
 class Spline:
     """
     Cubic Spline class
