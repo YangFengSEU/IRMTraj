@@ -1,5 +1,6 @@
 #!/bin/bash
 
+
 # python train.py --train_data1 "EP" --train_data2 "FT" --test_data "SR"
 # python train.py --train_data1 "EP" --train_data2 "FT" --test_data "LN"
 # python train.py --train_data1 "EP" --train_data2 "FT" --test_data "GL"
