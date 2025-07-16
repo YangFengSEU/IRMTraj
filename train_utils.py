@@ -1,5 +1,6 @@
 from torch import nn, optim, autograd
 
+
 def get_optimizer(model ,normal_op, score_op):
     if normal_op =="adam" and score_op =="adam":
         parameters = list(model.named_parameters())
