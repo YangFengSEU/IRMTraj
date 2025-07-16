@@ -66,5 +66,4 @@ Training logs are saved in the `log/` directory and model checkpoints are saved 
 
 
 
-
-Thank you for your interest in our project. If you have any questions, please feel free to contact us at yangfeng@seu.edu.cn. :-)
+Thank you for your interest in our project. If you have any questions, please feel free to contact us at yangfeng@seu.edu.cn.
