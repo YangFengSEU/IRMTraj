@@ -1,6 +1,7 @@
 from __future__ import print_function
 import torch
 
+
 from model import highwayNet2
 from model0 import highwayNet3
 from utilsout import maskedNLL,maskedMSE,maskedNLLTest,maskedMSEpenalty,maskedMSEirm,maskedMSEdestpenalty,maskedMSEides
