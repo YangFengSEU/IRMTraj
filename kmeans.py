@@ -3,6 +3,7 @@ import numpy as np
 from scipy.spatial.distance import cdist
 from matplotlib import pyplot as plt
 
+
 def initialize_center(trajs,k):
     indices = np.random.choice(trajs.shape[0],k,replace = False)
     return trajs[indices]
