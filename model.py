@@ -8,7 +8,6 @@ from torch.nn import functional as F
 import time
 
 
-
 class MLP(nn.Module):
     def __init__(self, input_dim, output_dim, hidden_size=(1024, 512), activation='relu', discrim=False, dropout=-1):
         super(MLP, self).__init__()
