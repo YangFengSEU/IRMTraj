@@ -3,6 +3,7 @@ import argparse
 args = None
 
 
+
 def parse_arguments():
     parser = argparse.ArgumentParser(description="IRM Training")
 
