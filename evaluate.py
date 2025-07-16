@@ -10,7 +10,6 @@ from unidataset_ngsim import UniDataset
 import time
 
 
-
 ## Network Arguments
 args = {}
 args['use_cuda'] = True
