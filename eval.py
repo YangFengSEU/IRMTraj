@@ -1,5 +1,4 @@
 import torch
-
 from model import highwayNet2
 from utilsout import maskedNLL,maskedMSE,maskedNLLTest,maskedMSEpenalty,maskedMSEirm,maskedMSEdestpenalty,maskedMSEides
 from torch.utils.data import DataLoader
