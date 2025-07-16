@@ -1,7 +1,3 @@
-#
-# For licensing see accompanying LICENSE file.
-# Copyright (C) 2019-2020 Apple Inc. All Rights Reserved.
-#
 
 from typing import List, Set, Dict, Tuple, Optional, Union
 from scipy import special
