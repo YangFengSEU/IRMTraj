@@ -1,4 +1,3 @@
-# <Copyright 2019, Argo AI, LLC. Released under the MIT license.>
 """Map visualization helper functions."""
 import copy
 import math
